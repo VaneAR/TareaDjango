@@ -1,5 +1,5 @@
 from selenium import webdriver
-import unnitest
+import unittest
 
 class NewVisitorTest(unittest.TestCase):
 
