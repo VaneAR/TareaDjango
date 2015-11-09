@@ -6,8 +6,8 @@ class NewVisitorTest(unittest.TestCase):
     def setUp(self):
         self.browser = webdriver.Firefox()
         self.browser.implicitly_wait(3)
-    def tearDown(self):
-        self.browser.quit()
+   "" def tearDown(self):
+    ""    self.browser.quit()
 
     def test_realizar_registro(self):
 #Misael ha escuchado sobre una nueva aplicación cool!! online, "airplane".
@@ -20,7 +20,7 @@ class NewVisitorTest(unittest.TestCase):
 #Él es invitado a realizar su registro.
        button = self.browser.find_element_by_id('id_nuevo_registro')
        self.assertEqual(button.get_attribute('placeholder'), 'Comenzar registro')
-       self.fail('Finish the test!')
+      # self.fail('Finish the test!')
 
 #Él llena el formulario con sus datos y da clic en registrar
        inputbox = self.browser.find_element_by_id('id_name')
